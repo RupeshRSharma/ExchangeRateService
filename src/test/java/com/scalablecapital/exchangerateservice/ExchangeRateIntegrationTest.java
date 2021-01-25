@@ -81,7 +81,7 @@ public class ExchangeRateIntegrationTest extends AbstractTest {
 		Assertions.assertEquals("USD", conversionRate.getFromCurrency());
 		Assertions.assertEquals("EUR", conversionRate.getToCurrency());
 		Assertions.assertEquals(BigDecimal.valueOf(10.0), conversionRate.getFromAmount());
-		Assertions.assertEquals(BigDecimal.valueOf(8.26), conversionRate.getConvertedAmount());
+		Assertions.assertEquals(BigDecimal.valueOf(8.2645), conversionRate.getConvertedAmount());
 
 	}
 
