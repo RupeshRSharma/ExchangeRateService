@@ -1,0 +1,22 @@
+{
+  "EUR": {
+    "code": "EUR",
+    "name": "Europe",
+    "value": "1"
+  },
+  "USD": {
+    "code": "USD",
+    "name": "United States Dollar",
+    "value": "1.21"
+  },
+  "HUF": {
+    "code": "HUF",
+    "name": "Hungarian Forint",
+    "value": "357.61"
+  },
+  "GBP": {
+    "code": "GBP",
+    "name": "Pound Sterling",
+    "value": "0.89"
+  }
+}

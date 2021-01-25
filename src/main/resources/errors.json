@@ -1,0 +1,7 @@
+{
+  "ERS_101": {
+    "code": "ERS_101",
+    "severity": "FATAL",
+    "message": "Currency Not Found."
+  }
+}

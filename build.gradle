@@ -1,0 +1,48 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.scalablecapital'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	// Web application dependency
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Actuator for metrics and application status
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	// Lombok for boilerplate code
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// Swagger UI
+	compile 'io.springfox:springfox-swagger2:2.9.2'
+	compile 'io.springfox:springfox-swagger-ui:2.9.2'
+
+	// Bean validation
+	implementation 'javax.validation:validation-api'
+
+	// Unit Test dependencies
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile 'org.mockito:mockito-core:2.1.0'
+	testCompile 'org.testng:testng:7.3.0'
+}
+
+test {
+	useTestNG()
+}
